@@ -1,0 +1,291 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-lhe8rc');
+	src:url('fonts/icomoon.eot?#iefix-lhe8rc') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-lhe8rc') format('woff'),
+		url('fonts/icomoon.ttf?-lhe8rc') format('truetype'),
+		url('fonts/icomoon.svg?-lhe8rc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*icomoon.io*/
+.icon-bubble:before {
+	content: "\e601";
+	color: #97DFCF;
+}
+.icon-user:before {
+	content: "\e600";
+}
+.icon-heart:before {
+	content: "\e603";
+	color:rgb(243, 147, 164);
+}
+.icon-arrow-right:before {
+	content: "\e602";
+}
+
+.botones{
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.botones span{
+	font-size: 20px;
+}
+
+*{
+	font-family: 'opens';
+}
+
+nav{
+	background: #63a9b5;	
+}
+
+nav ul{
+	margin:0;
+}
+
+nav ul a{
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 5px 20px;
+	border-right: solid 1px gray;
+	transition: all 1s ease;
+}
+
+nav ul li:hover{
+	background: gray;
+	color:white;
+}
+
+#contenedor{
+	color:#717171;
+	width: 90%;
+	margin: 0 auto;
+}
+
+header{
+	background: rgb(111,190,203);
+	color: #ffffff;
+	padding: 20px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+	position:relative;
+}
+
+header h1{
+	margin: 0;
+	font-size: 80px;
+	font-weight: normal;
+}
+
+header figure{
+	position: absolute;
+	right: 50px;
+	bottom:-47px;
+	margin: 0;
+}
+
+header figure img
+{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: solid 3px #4B6E74;
+}
+
+header h1 img{
+	width: 60px;
+	transition: all 1s ease;
+}
+
+header h1 img:hover{
+	-ms-transform: rotate(360deg); /* IE 9 */
+	-webkit-transform: rotate(360deg); /* Chrome, Safari, Opera*/
+	transform: rotate(360deg);
+}
+
+#noticias article{
+	background: #F9F9F9;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px 15px;
+	transition: all 1s ease;
+	overflow: hidden;
+}
+
+#noticias article .contenido img{
+	border-radius: 5px;
+}
+
+#noticias article p
+{
+	text-align: justify;
+	margin:0;
+}
+
+#clasificados article p
+{
+	text-align: justify;
+}
+
+#noticias article:hover{
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#noticias article button{
+	background: #5cc1d6;
+	border: solid 2px #23b1ce;
+	border-radius: 3px;
+	color:white;
+	float: right;
+}
+
+/*ejemplo imagenes entre noticias*/
+
+.imagenes{
+	background: gray;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.imagen{
+	display: inline-block;
+}
+
+.letras{
+	color: white;
+}
+
+.imagenes img{
+	width: 150px;
+}
+
+/*--------------------------------*/
+
+aside article{
+	border-bottom: solid 1px #EAEAEA;
+}
+
+#noticias article h3{
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+
+footer{
+	background: #355560;
+}
+
+footer span{
+	color: white;
+	display: block;
+	text-align: center;
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px){
+	#noticias,
+	#clasificados{
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#noticias article .contenido img,
+	#noticias article .contenido p{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#noticias article .contenido p{
+		width: 55%;
+	}
+
+	#noticias article .contenido img{
+		width: 40%;
+		margin-right: 5px;
+	}
+
+	#noticias{
+		width: 70%;
+		padding-right: 10px;
+	}
+
+	#clasificados{
+		width: 25%;
+		padding-left: 10px;
+		border-left: solid 1px #EAEAEA; 
+	}
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	#clasificados{
+		display: block;
+		padding-left: 10px;
+	}
+
+	#clasificados article{
+		display: inline-block;
+		width: 47%;
+		text-align: justify;
+	}
+
+	#noticias article .contenido img,
+	#noticias article .contenido p{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#noticias article .contenido p{
+		width: 55%;
+	}
+
+	#noticias article .contenido img{
+		width: 40%;
+		margin-right: 5px;
+	}
+
+	#clasificados article:nth-child(odd){
+		margin-left: 3%;
+		border-left: 0;  
+	}
+}
+
+/*movil*/
+@media screen and (max-width: 768px){
+	
+	header h1 img{
+		width: 45px;
+	}
+
+	header h1{
+		font-size: 50px;
+	}
+
+	#noticias article .contenido img{
+		margin: 15px 0;
+	}
+
+	#noticias article .contenido img{
+		width: 100%;
+		display: block;
+		border-radius: 4px;
+	}
+}
